@@ -1,0 +1,3 @@
+# .gitignore trong thư mục gốc frontend
+.DS_Store
+Thumbs.db

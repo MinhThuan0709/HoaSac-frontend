@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang Web Toàn Diện</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+ <nav class="navbar">
+    <button class="hamburger-btn" aria-label="Mở menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="navbar-brand-container">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo của tôi" />
+        </div>
+        <a href="product1.html" class="home-btn">Trang Chủ</a>
+    </div>
+
+    <ul class="nav-links">
+        <li class="dropdown">
+            <a href="#sanpham"><i class="fas fa-box"></i> Sản phẩm <i class="fas fa-caret-down dropdown-arrow"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="product1.html">Sản phẩm 1</a></li>
+                </ul>
+        </li>
+        <li><a href="#gioithieu"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+        <li class="dropdown">
+            <a href="#bosuutap"><i class="fas fa-images"></i> Bộ sưu tập <i class="fas fa-caret-down dropdown-arrow"></i></a>
+            <ul class="dropdown-menu">
+                 </ul>
+        </li>
+        <li><a href="#lienhe"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+        <li><a href="#dathang"><i class="fas fa-shopping-cart"></i> Đặt hàng</a></li>
+    </ul>
+
+    <div class="search-interaction-area">
+        <div class="search-box" id="expandable-search-content">
+            <div class="search-input-and-controls">
+                <div class="season-icons">
+                    <i class="fas fa-seedling spring" title="Xuân"></i>
+                    <i class="fas fa-sun summer" title="Hạ"></i>
+                    <i class="fas fa-leaf autumn" title="Thu"></i>
+                    <i class="fas fa-snowflake winter" title="Đông"></i>
+                </div>
+                <input type="text" class="search-input-field" placeholder="Tìm kiếm..." />
+                <button class="search-submit-btn-original" aria-label="Tìm">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="mode-toggle" title="Chuyển chế độ sáng/tối">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hot-searches-container">
+                </div>
+        </div>
+        <button class="search-toggler-icon" aria-label="Mở tìm kiếm">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</nav>
+</header>
+
+<section id="fullscreen-banner">
+   <div class="banner-slide active" style="background-image: url('images/banner-full-1.jpg');"></div>
+  <div class="banner-slide" style="background-image: url('images/banner-full-2.jpg');"></div>
+  <div class="banner-slide" style="background-image: url('images/banner-full-3.jpg');"></div>
+  <div class="banner-slide" style="background-image: url('images/banner-full-4.jpg');"></div>
+  </section>
+<section id="quote-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+  <div class="quote-container">
+    <p class="favorite-quote">𝑇𝑜 𝑚𝑒, 𝑓𝑎𝑠ℎ𝑖𝑜𝑛 𝑖𝑠𝑛’𝑡 𝑗𝑢𝑠𝑡 𝑓𝑙𝑎𝑠ℎ𝑦- 𝑖𝑡’𝑠 𝑎𝑟𝑡 & 𝑝𝑒𝑟𝑠𝑜𝑛𝑎𝑙𝑖𝑡𝑦</p>
+  </div>
+</section>
+<main style="padding: 20px;">
+  <section id="home-banners">
+    <div class="banner">
+      <img src="banner1.jpg" alt="Banner 1" />
+      <a href="#chitiet1" class="btn-detail">Xem chi tiết</a>
+    </div>
+    <div class="banner" data-aos="fade-up" data-aos-delay="0">
+      <img src="banner1.jpg" alt="Banner 1" />
+      <a href="#chitiet1" class="btn-detail">Xem chi tiết</a>
+    </div>
+    <div class="banner" data-aos="fade-right" data-aos-delay="100">
+      <img src="banner2.jpg" alt="Banner 2" />
+      <a href="#chitiet2" class="btn-detail">Xem chi tiết</a>
+    </div>
+    <div class="banner" data-aos="fade-left" data-aos-delay="200">
+      <img src="banner3.jpg" alt="Banner 3" />
+      <a href="#chitiet3" class="btn-detail">Xem chi tiết</a>
+    </div>
+    <div class="banner" data-aos="zoom-in" data-aos-delay="300">
+      <img src="banner4.jpg" alt="Banner 4" />
+      <a href="#chitiet4" class="btn-detail">Xem chi tiết</a>
+    </div>
+    <div class="banner" data-aos="flip-left" data-aos-delay="400">
+      <img src="banner5.jpg" alt="Banner 5" />
+      <a href="#chitiet5" class="btn-detail">Xem chi tiết</a>
+    </div>
+    <div class="banner" data-aos="zoom-out" data-aos-delay="500">
+      <img src="banner6.jpg" alt="Banner 6" />
+      <a href="#chitiet6" class="btn-detail">Xem chi tiết</a>
+    </div>
+  </section>
+
+  <section id="collections" style="padding: 40px 20px;">
+    <h2 class="section-title" data-aos="fade-up">Bộ Sưu Tập Sản Phẩm</h2>
+    <div class="scroll-wrapper">
+      <button class="scroll-btn left" id="scroll-left"><i class="fas fa-chevron-left"></i></button>
+      <div class="product-scroll-container" id="product-container">
+        <div class="product-card">
+          <img src="images/product1.jpg" alt="Áo Thun Trắng" />
+          <h3>Áo Thun Trắng</h3>
+          <p class="price">150.000đ</p>
+          <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-card">
+          <img src="images/product2.jpg" alt="Đầm Vintage" />
+          <h3>Đầm Vintage</h3>
+          <p class="price">320.000đ</p>
+          <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-card">
+          <img src="images/product3.jpg" alt="Áo Sơ Mi Caro" />
+          <h3>Áo Sơ Mi Caro</h3>
+          <p class="price">210.000đ</p>
+          <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-card">
+          <img src="images/product4.jpg" alt="Áo Sơ Mi Caro" />
+          <h3>Áo Sơ Mi Caro2</h3>
+          <p class="price">210.000đ</p>
+          <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-card">
+          <img src="images/product6.jpg" alt="Áo Sơ Mi Caro" />
+          <h3>Áo Sơ Mi Caro3</h3>
+          <p class="price">210.000đ</p>
+          <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-card">
+          <img src="images/product5.jpg" alt="Áo Sơ Mi Caro" />
+          <h3>Áo Sơ Mi Caro4</h3>
+          <p class="price">210.000đ</p>
+          <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-card">
+          <img src="images/product7.jpg" alt="Áo Sơ Mi Caro" />
+          <h3>Áo Sơ Mi Caro 5</h3>
+          <p class="price">210.000đ</p>
+          <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+      </div>
+      <button class="scroll-btn right" id="scroll-right"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+</main>
+
+<div id="popup-ad" class="popup-overlay">
+  <div class="popup-content">
+    <button id="popup-close" class="popup-close">&times;</button>
+    <img src="quangcao.jpg" alt="Quảng cáo" width="500" height="500" />
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>Hoa Sac FASHION</h2>
+      <p>
+        Hoa Sac luôn cam kết, đảm bảo đưa sản phẩm trực tiếp từ nhà sản xuất đến tay người dùng và kiểm soát được chất lượng để đáp ứng được nhu cầu ngày càng cao của khách hàng. Tất cả các sản phẩm tại Hoa Sac đều có nguồn gốc xuất xứ rõ ràng, chất lượng.
+      </p>
+    </div>
+    <div class="footer-section contact">
+      <h3>Liên hệ</h3>
+      <p>Tư vấn dịch vụ: SDT Yến</p>
+      <p>Hỗ trợ sử dụng: SDT Yến</p>
+      <p>Hỗ trợ vận chuyển: SDT Yến</p>
+      <p>Email: mailcuaYen@sapo.vn</p>
+      <p>Từ 7h00 – 22h00 các ngày từ thứ 2 đến Chủ nhật</p>
+    </div>
+    <div class="footer-section about-us">
+      <h3>Về chúng tôi</h3>
+      <ul>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản dịch vụ</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+      </ul>
+    </div>
+    <div class="footer-section featured">
+      <h3>Danh mục nổi bật</h3>
+      <ul>
+        <li><a href="#">T-Shirt</a></li>
+        <li><a href="#">Dress</a></li>
+        <li><a href="#">Tops & Shirts</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social">
+      <h3>Liên hệ với chúng tôi</h3>
+      <p>Luôn cập nhật tất cả các hành động mà chúng tôi lưu cho tất cả khách hàng của mình.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 - Bản quyền thuộc về <a href="#" class="footer-company"> TECHNOLOGY CO., LTD.</a> Powered by HoaSac</p>
+    <div class="payment-icons">
+      <img src="visa.png" alt="Visa" />
+      <img src="mastercard.png" alt="Mastercard" />
+      <img src="paypal.png" alt="Paypal" />
+      <img src="amex.png" alt="American Express" />
+    </div>
+  </div>
+</footer>
+
+<div id="clock-popup" class="clock-popup">
+  <div class="clock">
+    <div class="hand hour" id="hour-hand"></div>
+    <div class="hand minute" id="minute-hand"></div>
+    <div class="hand second" id="second-hand"></div>
+    <div class="center-circle"></div>
+  </div>
+  <div class="date-display" id="date-display"></div>
+</div>
+
+<div id="sakura-container"></div>
+<div id="coin-container"></div>
+
+<button id="floating-add-product-btn" title="Thêm sản phẩm mới">
+    <i class="fas fa-plus"></i>
+    <span>Thêm Sản Phẩm</span>
+</button>
+
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+</body>
+</html>

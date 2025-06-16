@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sản Phẩm 1 - ZIP HOODIE</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo" />
+      </div>
+      <a href="index.html" class="home-btn">Trang Chủ</a>
+      <div class="search-box" style="margin-left: auto; margin-right: 20px;">
+        <input type="text" class="search-input-field" placeholder="Tìm kiếm sản phẩm..." />
+        <button class="search-submit-btn-original"><i class="fas fa-search"></i></button>
+        <button id="mode-toggle" title="Chuyển chế độ sáng/tối">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main style="padding: 40px 20px;">
+
+    <section class="product-hero">
+      <div class="left-thumbnails">
+        <img src="images/thumb1.jpg" data-full="images/product1.jpg" alt="Sản phẩm phụ 1" />
+        <img src="images/thumb2.jpg" data-full="images/product1_alt1.jpg" alt="Sản phẩm phụ 2" />
+        <img src="images/thumb3.jpg" data-full="images/product1_alt2.jpg" alt="Sản phẩm phụ 3" />
+      </div>
+
+      <div class="main-product-image">
+        <img id="main-image" src="images/product1.jpg" alt="Sản phẩm chính" />
+        <div class="hero-text">
+          <p>New Arrivals</p>
+          <h1>ZIP HOODIE</h1>
+          <p class="desc">Phong cách cá tính, thoải mái cho mùa thu đông. Chất liệu cotton mềm mịn, form unisex dễ phối đồ.</p>
+          <a href="#" class="buy-btn">Discover Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-grid-5x5" style="margin-top: 40px;">
+      <h2 class="section-title">Gợi ý sản phẩm</h2>
+      <div id="product-list" class="grid-container">
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>Hoa Sac FASHION</h2>
+        <p>Hoa Sac cam kết mang đến sản phẩm chất lượng cao, nguồn gốc rõ ràng từ nhà sản xuất đến tay người tiêu dùng.</p>
+      </div>
+      <div class="footer-section contact">
+        <h3>Liên hệ</h3>
+        <p>Tư vấn: 0123 456 789</p>
+        <p>Email: lienhe@hoasac.vn</p>
+        <p>Giờ làm việc: 7h - 22h hàng ngày</p>
+      </div>
+      <div class="footer-section social">
+        <h3>Kết nối</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 - Bản quyền thuộc về HoaSac Fashion</p>
+    </div>
+  </footer>
+
+  <div id="sakura-container"></div>
+  <div id="coin-container"></div>
+
+  <button id="floating-add-product-btn" title="Thêm sản phẩm mới">
+      <i class="fas fa-plus"></i>
+      <span>Thêm Sản Phẩm</span>
+  </button>
+
+  <div id="add-product-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="close-modal-btn" aria-label="Đóng">&times;</button>
+      <h2>Thêm Sản Phẩm Mới</h2>
+      <form id="add-product-form">
+        <div class="form-group">
+          <label for="product-image-dropzone">Hình ảnh sản phẩm (kéo thả hoặc chọn):</label>
+          <div id="product-image-dropzone" class="image-drop-zone">
+            <p>Kéo & thả hình ảnh vào đây, hoặc nhấp để chọn file</p>
+            <input type="file" id="product-image-input" name="productImage" accept="image/*" multiple style="display: none;">
+            <div id="image-preview-container"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="product-name">Tên sản phẩm:</label>
+          <input type="text" id="product-name" name="productName" required placeholder="Ví dụ: Áo Hoodie Zip Xám">
+        </div>
+        <div class="form-group form-group-inline">
+          <div>
+            <label for="product-price">Giá (VNĐ):</label>
+            <input type="number" id="product-price" name="productPrice" required placeholder="Ví dụ: 350000" min="0">
+          </div>
+          <div>
+            <label for="product-sale-percentage">Giảm giá (%):</label>
+            <input type="number" id="product-sale-percentage" name="salePercentage" placeholder="Ví dụ: 10" min="0" max="100">
+          </div>
+        </div>
+
+        <div class="form-group form-group-inline">
+          <div>
+            <label for="product-badge-text">Chữ trên Nhãn (Badge):</label>
+            <input type="text" id="product-badge-text" name="badgeText" placeholder="Ví dụ: New, Hot, Sale Off">
+          </div>
+          <div>
+            <label for="product-badge-color">Tên Màu Nhãn (ví dụ: green, blue):</label>
+            <input type="text" id="product-badge-color" name="badgeColor" placeholder="Mặc định: grey (nếu có chữ)">
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="product-notes">Ghi chú / Mô tả:</label>
+          <textarea id="product-notes" name="productNotes" rows="4" placeholder="Mô tả chi tiết về sản phẩm..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-product-btn">Lưu Sản Phẩm</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  </body>
+</html>
