@@ -1,3 +1,11 @@
-# .gitignore trong thư mục gốc frontend
+# hoasac-frontend/.gitignore
+
+node_modules/       # Nếu bạn có node_modules ở frontend (ít khi xảy ra với dự án tĩnh)
+backend/            # Bỏ qua thư mục backend nếu nó nằm trong repo frontend của bạn
+.env                # Bỏ qua file .env nếu bạn có nó ở frontend (không nên có)
+.gitmodules         # Bỏ qua file .gitmodules nếu nó xuất hiện (gây lỗi submodule)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .DS_Store
-Thumbs.db
+Thumbs.db           # Bỏ qua file của Windows
